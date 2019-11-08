@@ -1,0 +1,89 @@
+
+<style>
+  
+
+  .toolbar {
+    height: 60px;
+    margin: -8px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo {
+    height: 40px;
+    margin: 0 16px;
+  }
+
+  .toolbar #twitter-logo:hover {
+    opacity: 0.8;
+  }
+
+  .card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+}
+
+</style>
+
+<!-- Toolbar -->
+<div class="toolbar" role="banner">
+  <img
+    width="40"
+    alt="Angular Logo"
+    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg=="
+  />
+  {{title}}
+</div>
+<br>
+
+<form style="width: 15rem;">
+    <div class="form-group" >
+      <label for="exampleInputEmail1">Nombre</label>
+      <input type="text" [(ngModel)]="imagenNueva.nombre" class="form-control" aria-describedby="emailHelp" placeholder="nombre imagen">
+   
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">URL</label>
+      <input type="text" [(ngModel)]="imagenNueva.urlImagen" class="form-control"  placeholder="URL">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <br>
+
+
+
+
+
+<div class="container">
+
+    <div class="card" style="width: 15rem;">
+        <img src="https://ucsp.edu.pe/saladeprensa/wp-content/uploads/2016/10/IMG_8705-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <p class="card-text">Paisaje</p>
+          </div>
+      </div>
+      <div class="card" style="width: 15rem;">
+          <img src="https://previews.123rf.com/images/3000ad/3000ad1609/3000ad160900040/65036954-paisaje-bonsai-y-penjing-con-el-%C3%A1rbol-de-hoja-perenne-en-miniatura-en-una-bandeja.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+              <p class="card-text">Arbol</p>
+            </div>
+        </div>
+        <div class="card" style="width: 15rem;">
+            <img src="https://i.pinimg.com/originals/df/46/a5/df46a59441ec0d497dae981120a17537.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Piscina</p>
+              </div>
+          </div>
+  
+     
+</div>
+
+<router-outlet></router-outlet>
